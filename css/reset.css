@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+button,
+input,
+::placeholder {
+  font-family: "IranYekan", sans-serif, system-ui;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.container {
+  max-width: 1336px;
+  margin: 0 auto;
+}
+
+.container-slider {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-footer,
+.container-header {
+  max-width: 1676px;
+  margin: 0 auto;
+}

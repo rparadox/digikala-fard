@@ -1,0 +1,100 @@
+.amazings {
+  width: 100%;
+  height: 294px;
+  margin-top: 24px;
+  & .container {
+    padding: 20px 0;
+    background-image: linear-gradient(
+      -45deg,
+      #d22c4e 0%,
+      #ee384e 42%,
+      #ef5662 100%
+    );
+    height: 100%;
+    border-radius: 16px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    & .swiper-slide {
+      &:not(:nth-child(1)) {
+        background-color: white;
+        padding: 8px 14px;
+      }
+      &:first-child {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        & :first-child {
+          width: 88px;
+          height: 88px;
+        }
+        & :nth-child(2) {
+          width: 80px;
+          height: 80px;
+        }
+        & span {
+          color: white;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+      &:nth-child(2) {
+        border-radius: 0 8px 8px 0;
+      }
+      &:last-child {
+        border-radius: 8px 0 0 8px;
+      }
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.amazings__img-container {
+  width: 100%;
+  height: 132px;
+}
+.amazings__img {
+  width: 100%;
+  height: 100%;
+}
+.amazings__title {
+  margin-top: 8px;
+  color: #62666d;
+  font-size: 12px;
+  font-weight: 400;
+}
+.amazings__price {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+}
+.amazings__discount{
+    height: 20px;
+    background-color: #D32F2F;
+    border-radius: 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 6.5px;
+}
+.amazings__price{
+    color: #3F4064;
+    font-size: 14px;
+    font-weight: 700;
+}
+.amazings__price-discount{
+    color: #C0C2C5;
+    font-size: 12px;
+    display: block;
+    text-align: left;
+}
